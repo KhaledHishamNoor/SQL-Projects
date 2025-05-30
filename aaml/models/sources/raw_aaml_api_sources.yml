@@ -1,0 +1,20 @@
+version: 2
+sources:
+  - name: fcubs
+    database: cdmdb
+    schema: fcubs
+    tables:
+      - name: sttm_customer
+      - name: cstm_function_userdef_fields
+      - name: sttm_country
+      - name: sttm_customer_custom
+      - name: sttm_cust_personal
+      - name: sttm_cust_personal_custom
+      - name: sttm_cust_profession_custom
+      - name: mitm_customer_default
+      - name: gltm_mis_code
+  - name: metadata
+    database: cdmdb
+    schema: metadata
+    tables:
+      - name: kafka_deltas

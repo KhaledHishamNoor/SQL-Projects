@@ -1,0 +1,12 @@
+name: aaml
+version: 1.0
+profile: cdm_profile
+model-paths: ["models"]
+models:
+  aaml:
+    staging:
+      +materialized: incremental
+      +incremental_strategy: merge
+    marts:
+      +materialized: incremental
+      +incremental_strategy: merge
